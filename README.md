@@ -1,10 +1,8 @@
-# Chainlink Constellation Hackathon, Fall 2023 - Demonstrating the Power of Chainlink Functions
+# AI & Blockchain Integration Using Chainlink Functions
 
-This workshop demonstrates Chainlink Functions. The key dependency used is the [Chainlink Functions Toolkit NPM Package](https://github.com/smartcontractkit/functions-toolkit)
+This is a basic integration of AI into Smart Contracts using Chainlink Technologies. The key dependency used is the [Chainlink Functions Toolkit NPM Package](https://github.com/smartcontractkit/functions-toolkit)
 
-In this workshop, we will make an on-chain prompt to the OpenAPI ChatGPT API and get a decentralized response delivered back on chain -- all done via a single Smart Contract and some custom JavaScript that we supply that is executed by the Chainlink Decentralized Oracle Network!
-
-The custom JS code that makes HTTP requests can receive dynamic arguments (the prompt we want answered) and access encrypted API keys (a.k.a secrets) to access the OpenAI API.
+There are many possible applications of AI systems in Blockchain. We started with a basic model to do sentiment analysis on X with respect to a specific token passed by the smart contract user. Possible use-cases regards Defi protocols like lending platforms that could leverage this technology to get an alert for tokens that are more likely to decline in value leading to collateral liquidations (LTV monitoring system).
 
 The source code that will be executed by Chainlink Functions is in `./source.js`. This is the code that gets sent on-chain and then onto the Chainlink Decentralized Oracle Network for decentralized execution.
 
@@ -49,11 +47,3 @@ Set your environment variables using the `env-enc` package included.
 
 2.  Please add at least 3 LINK to your subscription to run this project's code. This can be done from the ACTIONS button when your wallet is connected.
     </br>
-
-3.  Follow along on the workshop!
-
-
-
-## Disclaimer
-
-This tutorial offers educational examples of how to use a Chainlink system, product, or service and is provided to demonstrate how to interact with Chainlink’s systems, products, and services to integrate them into your own. This template is provided “AS IS” and “AS AVAILABLE” without warranties of any kind, it has not been audited, and it may be missing key checks or error handling to make the usage of the system, product, or service more clear. Do not use the code in this example in a production environment without completing your own audits and application of best practices. Neither Chainlink Labs, the Chainlink Foundation, nor Chainlink node operators are responsible for unintended outputs that are generated due to errors in code.
