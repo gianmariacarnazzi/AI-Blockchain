@@ -1,6 +1,6 @@
 # AI & Blockchain Integration Using Chainlink Functions
 
-This is a basic integration of AI into Smart Contracts using Chainlink Technologies. The key dependency used is the [Chainlink Functions Toolkit NPM Package](https://github.com/smartcontractkit/functions-toolkit)
+This is a basic integration of AI into Smart Contracts using Chainlink Technologies. The key dependency used is the [Chainlink Functions Toolkit NPM Package](https://github.com/smartcontractkit/functions-toolkit). The code is inspired by the chainlink constellation hackaton repo (https://github.com/smartcontractkit/functions-deepdive-constellation2023/tree/main).
 
 There are many possible applications of AI systems in Blockchain. I started with a basic API call to a text-to-image model that could be used in NFT ecosystems. For example, a TCG game could leverage this to let users create their own card whenever they got some badges or by spending their token rewards.
 Another implementation can be based on a model that performs sentiment analysis on X with respect to a specific token passed by the smart contract user. Possible use-cases regard Defi protocols like lending ones that could leverage this technology to get an alert for tokens that are more likely to decline in value leading to collateral liquidations (LTV monitoring system).
