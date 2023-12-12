@@ -8,9 +8,9 @@ require("@chainlink/env-enc").config();
 const { signer } = require("../connection.js");
 const { abi } = require("../contracts/abi/FunctionsConsumer.json");
 
-const consumerAddress = "0x01568F134A64b8c525E468908a3850B6c6A55F54";
-const subscriptionId = "718";
-const encryptedSecretsRef = "0xa266736c6f744964006776657273696f6e1a65540efa";
+const consumerAddress = "0x3D8F757bC4075a356466aF3AB613C39c33fe4b51";
+const subscriptionId = "1190";
+const encryptedSecretsRef = "0xa266736c6f744964006776657273696f6e1a6578d7d1";
 
 const sendRequest = async () => {
   if (!consumerAddress || !encryptedSecretsRef || !subscriptionId) {
@@ -22,7 +22,7 @@ const sendRequest = async () => {
     .readFileSync(path.resolve(__dirname, "../source.js"))
     .toString();
 
-  const prompt = "Describe what a blockchain is in 15 words or less";
+  const prompt = "Generate the Image of a lion dressed like a Samurai warrior";
   const args = [prompt];
   const callbackGasLimit = 300_000;
 

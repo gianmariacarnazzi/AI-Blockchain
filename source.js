@@ -1,26 +1,25 @@
-const gptPrompt = args[0];
+const _prompt = args[0];
 
 const postData = {
-  model: "gpt-3.5-turbo",
-  messages: [{ role: "user", content: gptPrompt }],
-  temperature: 0,
+  key: secrets.apiKey,
+  prompt: _prompt
 };
 
-const openAIResponse = await Functions.makeHttpRequest({
-  url: "https://api.openai.com/v1/chat/completions",
+const StableDiffusionResponse = await Functions.makeHttpRequest({
+  url: "https://stablediffusionapi.com/api/v3/text2img",
   method: "POST",
   headers: {
-    Authorization: `Bearer ${secrets.apiKey}`,
-    "Content-Type": "application/json",
+    "Content-Type": "application/json"
   },
   data: postData,
+  timeout:9000
 });
 
-if (openAIResponse.error) {
-  throw new Error(JSON.stringify(openAIResponse));
+if (StableDiffusionResponse.error) {
+  throw new Error(JSON.stringify(StableDiffusionResponse));
 }
 
-const result = openAIResponse.data.choices[0].message.content;
+const result = StableDiffusionResponse.data.output[0];
 
 console.log(result);
 return Functions.encodeString(result);

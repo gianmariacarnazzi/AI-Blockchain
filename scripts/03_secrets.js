@@ -22,12 +22,12 @@ const encryptAndUploadSecrets = async () => {
 
   await secretsManager.initialize();
 
-  if (!process.env.GPT_API_KEY) {
-    throw Error("GPT_API_KEY not found in .env.enc file");
+  if (!process.env.API_KEY) {
+    throw Error("API_KEY not found in .env.enc file");
   }
 
   const secrets = {
-    apiKey: process.env.GPT_API_KEY,
+    apiKey: process.env.API_KEY,
   };
 
   const encryptedSecretsObj = await secretsManager.encryptSecrets(secrets);
