@@ -9,8 +9,8 @@ const { signer } = require("../connection.js");
 const { abi } = require("../contracts/abi/FunctionsConsumer.json");
 
 const consumerAddress = "0x3D8F757bC4075a356466aF3AB613C39c33fe4b51";
-const subscriptionId = "1190";
-const encryptedSecretsRef = "0xa266736c6f744964006776657273696f6e1a6578d7d1";
+const subscriptionId = "..."; //Replace with sub id
+const encryptedSecretsRef = "..."; // Replace with DON secret ref
 
 const sendRequest = async () => {
   if (!consumerAddress || !encryptedSecretsRef || !subscriptionId) {

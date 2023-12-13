@@ -2,7 +2,7 @@ const axios = require('axios');
 
 async function generateImage(prompt) {
   // Your API Key
-  const apiKey = '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'; // Replace with your actual API key
+  const apiKey = '...'; // Replace with your actual API key
 
   // Post Data
   const postData = {

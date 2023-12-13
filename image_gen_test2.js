@@ -1,7 +1,7 @@
 const axios = require('axios');
 
 async function generateImage(prompt) {
-  const apiKey = 'y0jmoouJvyBGr4CA13vEVoqqTnZ3ZlL1eRh5B5LG884sF6KW5WO5DRXoNz1w' // Ensure your API key is correctly set here
+  const apiKey = '...' // Ensure your API key is correctly set here
 
   const postData = {
     key: apiKey,

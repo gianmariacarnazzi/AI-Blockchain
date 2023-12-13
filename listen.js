@@ -10,7 +10,7 @@ const { networks } = require("./networks.js");
 const { provider } = require("./connection.js");
 
 const NETWORK = "polygonMumbai";
-const subscriptionId = "1190";
+const subscriptionId = ""; //replace with sub id
 
 const responseListener = new ResponseListener({
   provider,
